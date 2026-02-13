@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Define la codificacion de caracteres de nuestra pagina web-->
+    <meta charset="UTF-8">
+    <!-- Permite que el sitio se adaptate a diferentes resoluciones-->
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <!-- Descripcion de nuestra pagina web-->
+    <meta name="description" content="Portafolio profesional de Ingenierio en software">
+    <meta name="keywords" content="portafolio, ingeniero en software, desarrollo web">
+    <!-- Autor-->
+    <meta name="author" content="Adel Mendez">
+
+    <!-- titulo de la pagina-->
+    <title>Portafolio profesional</title>
+    <!-- Se modofica el icon -->
+    <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/736x/19/60/56/1960568a77e393609d90b69f68ef6b70.jpg">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contactame- Adel Mendez</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">sobre mi</a>
+            <a href="/work.html">Proyectos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Acerca de Adel Mendez</h2>
+            <p>Soy un ingeniero en software con experiencia en desarrollo web y una pasión por crear soluciones
+                innovadoras. Me especializo en tecnologías como JavaScript, React y Node.js.</p>
+        </section>
+
+        <section>
+            <form action="images/" method="post">
+                <br>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Adel Mendez" required>
+                </br>
+                <br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.com$"
+                    placeholder="Ej.adelpupusino@gmail.com" required>
+                </br>
+
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
+                </br>
+
+                <br>
+                <label for="telefono">telefono:</label>
+                <input type="text" id="telefono" name="telefono" min="10" max="10" pattern="[0-9]{10}"
+                    placeholder="+52 1234567890" required>
+                </br>
+
+                <br>
+                <label for="fecha">Fecha de contacto:</label>
+                <input type="date" id="fecha" name="fecha">
+                </br>
+
+                <br>
+                <label for="edad">Edad (18 - 99 años):</label>
+                <input type="number" id="edad" name="edad" min="18" max="99" required>
+                </br>
+                <br>
+                <select name="motivo" id="motivo">
+                    <option value="consulta">Consulta</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                </br>
+                <label for="preferencia"> ¿Como te gustaria que te contacte?</label>
+                <br>
+
+                <input type="radio" id="email" name="preferencia" value="email" required>
+                <label for="email">Email</label>
+                <input type="radio" id="telefono" name="preferencia" value="telefono" required>
+                <label for="telefono">Teléfono</label>
+                </br>
+
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar Formulario</button>
+                </br>
+
+            </form>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adel Mendez. Todos los derechos reservados.</p>
+    </footer>
+
+</html>
