@@ -1,0 +1,56 @@
+@import url('./global.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+display:flex;
+flex-direction: column;
+min-height: 100dvh;
+background-color: var(--color-primario);
+}
+
+.container {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+    
+}
+
+.header {
+    background-color: var(--navbar-color);
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding-top: 30px;
+}
+
+.navegador a {
+    color: var(--links-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main {
+    flex-grow: 1; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
