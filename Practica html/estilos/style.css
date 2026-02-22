@@ -1,5 +1,5 @@
 @import url('./global.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -27,11 +27,20 @@ background-color: var(--color-primario);
     background-color: var(--navbar-color);
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    height: 100vh;
+    width: 20vw;
+    height: 95vh;
     position: sticky;
     top: 0;
     padding: 20px;
+}
+
+.header h1 {
+    font-family: 'Doto', sans-serif;
+    font-size: 30px;
+    padding-top: 45px;
+    margin-bottom: 20px;
+    color: var(--color-texto);
+    text-align: center;
 }
 
 .navegador {
@@ -42,9 +51,12 @@ background-color: var(--color-primario);
 }
 
 .navegador a {
-    color: var(--links-color);
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    color: var(--color-texto);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
+    text-align:justify;
 }
 
 .main {
@@ -53,4 +65,82 @@ background-color: var(--color-primario);
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.footer {
+    background-color: var(--navbar-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--color-texto);
+}
+
+.menu-toggle {
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        enable-background:rgb(241, 238, 238) ;
+        border: none;
+        padding: 10px;
+    }
+
+    .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white; 
+    margin: 4px 0;
+    transition: 0.4s;
+    }
+
+@media (max-width: 768px) {
+    
+    .menu-toggle {
+        display: flex; 
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1000;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white; 
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .navegador {
+        position: fixed;
+        left: -100%; 
+        top: 0;
+        padding: 15px 20px;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    .navegador a {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .navegador.active {
+        left: 0;    
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main {
+        padding: 20px;
+    }
 }
