@@ -17,121 +17,98 @@
     <!-- Se modofica el icon -->
     <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/736x/19/60/56/1960568a77e393609d90b69f68ef6b70.jpg">
 
-    <style>
-      body {
-         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: #f4f4f4;
-      }
-
-      header {
-         background-color: #333;
-         color: #fff;
-         padding: 20px;
-         text-align: center;
-      }
-
-      nav a {
-         color: #fff;
-         margin: 0 15px;
-         text-decoration: none;
-      }
-
-      main {
-         padding: 20px;
-      }
-
-      section {
-         margin-bottom: 20px;
-      }
-
-      footer {
-         background-color: #333;
-         color: #fff;
-         text-align: center;
-         padding: 10px 0;
-      }
-   </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
+    <div class="container">
 
-    <header>
-        <h1>Sobre mí - Adel Mendez</h1>
-        <nav>
-            <a href="/Practica html/about.html">sobre mi</a>
-            <a href="/Practica html/index.html">Home</a>
-            <a href="/Practica html/skills.html">Habilidades</a>
-            <a href="/Practica html/contacto.html">Contacto</a>
-            <a href="/Practica html/projects.html">Proyectos realizados</a>
-        </nav>
-    </header>
+        <button class="menu-toggle" id="menu-toggle">Menu
+            <span class="bar"></span>
+            <span class="bar"> </span>
+            <span class="bar"></span>
+            <span class="bar"> </span>
+            <span class="bar"></span>
+        </button>
+        <header class="header">
+            <h1>Work!</h1>
+            <nav class="navegador" id="navegador">
+                <a href="about.html">sobre mi</a>
+                <a href="index.html">Home</a>
+                <a href="skills.html">Habilidades</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="projects.html">Proyectos realizados</a>
+            </nav>
+        </header>
 
-    <main>
-        <section>
-            <h2>Acerca de Adel Mendez</h2>
-            <p>Soy un ingeniero en software con experiencia en desarrollo web y una pasión por crear soluciones
-                innovadoras. Me especializo en tecnologías como JavaScript, React y Node.js.</p>
-        </section>
+        <main class="main">
+            <section>
+                <h2>Acerca de Adel Mendez</h2>
+                <p>Soy un ingeniero en software con experiencia en desarrollo web y una pasión por crear soluciones
+                    innovadoras. Me especializo en tecnologías como JavaScript, React y Node.js.</p>
+            </section>
 
-        <section>
-            <h2>Educación</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Institución</th>
-                        <th>Grado</th>
-                        <th>Año de Graduación</th>
-                    </tr>
+            <section>
+                <h2>Educación</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Institución</th>
+                            <th>Grado</th>
+                            <th>Año de Graduación</th>
+                        </tr>
 
-                <tbody>
-                    <tr>
-                        <td>ITSON</td>
-                        <td>Ingeniería en Software</td>
-                        <td>2023</td>
-                    </tr>
-            </table>
-        </section>
+                    <tbody>
+                        <tr>
+                            <td>ITSON</td>
+                            <td>Ingeniería en Software</td>
+                            <td>2023</td>
+                        </tr>
+                </table>
+            </section>
 
-        <section>
-            <h2>Experiencia Profesional</h2>
-            <ul>
-                <li>Desarrollador Web </li>
-                <li>Practicante</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Experiencia Profesional</h2>
+                <ul>
+                    <li>Desarrollador Web </li>
+                    <li>Practicante</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Experiencias</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Actividades academicas</th>
-                        <th>Experiencias</th>
-                        <th>Proyectos</th>
-                    </tr>
+            <section>
+                <h2>Experiencias</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Actividades academicas</th>
+                            <th>Experiencias</th>
+                            <th>Proyectos</th>
+                        </tr>
 
-                <tbody>
-                    <tr>
-                        <td>Aplicaciones web</td>
-                        <td>Cursos de aplicaciones web</td>
-                        <td>taji</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Aplicaciones web</td>
+                            <td>Cursos de aplicaciones web</td>
+                            <td>taji</td>
+                        </tr>
 
-                    <tr>
-                        <td>Desarrollo de software</td>
-                        <td>Cursos de desarrollo de software</td>
-                        <td>taji</td>
-                    </tr>
+                        <tr>
+                            <td>Desarrollo de software</td>
+                            <td>Cursos de desarrollo de software</td>
+                            <td>taji</td>
+                        </tr>
 
-                </tbody>
-            </table>
-        </section>
-    </main>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Adel Mendez. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="estilos/script.js"></script>
+</body>
 
 </html>

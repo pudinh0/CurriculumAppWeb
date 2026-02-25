@@ -4,58 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos de Adel Mendez</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      body {
-         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: #f4f4f4;
-      }
-
-      header {
-         background-color: #333;
-         color: #fff;
-         padding: 20px;
-         text-align: center;
-      }
-
-      nav a {
-         color: #fff;
-         margin: 0 15px;
-         text-decoration: none;
-      }
-
-      main {
-         padding: 20px;
-      }
-
-      section {
-         margin-bottom: 20px;
-      }
-
-      footer {
-         background-color: #333;
-         color: #fff;
-         text-align: center;
-         padding: 10px 0;
-      }
-   </style>
-</head>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/736x/19/60/56/1960568a77e393609d90b69f68ef6b70.jpg">
 
 <body>
-    <header>
-        <h1>Proyectos de Adel Mendez</h1>
-        <nav>
-            <a href="/Practica html/about.html">sobre mi</a>
-            <a href="/Practica html/index.html">Home</a>
-            <a href="/Practica html/projects.html">Proyectos</a>
-            <a href="/Practica html/contacto.html">Contacto</a>
-            <a href="/Practica html/skills.html">Habilidades</a>
+    <div class="container">
+        <button class="menu-toggle" id="menu-toggle">Menu
+            <span class="bar"></span>
+            <span class="bar"> </span>
+            <span class="bar"></span>
+            <span class="bar"> </span>
+            <span class="bar"></span>
+        </button>
+    <header class="header">
+
+        <h1>Projects!!</h1>
+        <nav class="navegador" id="navegador">
+            <a href="about.html">sobre mi</a>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="skills.html">Habilidades</a>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <h2>Proyecto 1: Portafolio Personal</h2>
             <p>Desarrollé un portafolio personal utilizando HTML, CSS y JavaScript para mostrar mis habilidades y
@@ -76,9 +49,11 @@
         </section>
     </main>
 
-    <footer>
+    </div>
+    <footer class="footer">
         <p>&copy; 2026 Adel Mendez. Todos los derechos reservados.</p>
     </footer>
+    <script src="estilos/script.js"></script>
 </body>
 
 </html>
