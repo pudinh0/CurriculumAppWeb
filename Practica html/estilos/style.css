@@ -117,7 +117,7 @@ background-color: var(--color-primario);
         width: 250px;
         height: 100vh;
         flex-direction: column;
-        background-color: #1a1a1a;
+        background-color: #344e41;
         transition: 0.3s;
         z-index: 999;
     }
