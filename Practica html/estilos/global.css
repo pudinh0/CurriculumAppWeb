@@ -1,9 +1,9 @@
-:root{
-    --color-primario: #a3b18a;
-    --color-secundario: #588157;
-    --color-texto: #ffffff;
-    --links-color: #365e33;
-    --links-hover-color: #3c9835;
-    --navbar-color: #344e41;
-    --highlight-color: #3c9835d0;
+:root {
+  --color-primario: #41431b;
+  --color-secundario: #f8f3e1;
+  --color-texto: #ffffff;
+  --links-color: #aeb784;
+  --links-hover-color: #e3dbbb;
+  --navbar-color: #41431b;
+  --highlight-color: #aeb784;
 }
